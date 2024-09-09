@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --size-1: 1.2em;
+    --size-2:1.5em;
+    --size-3:1.1em;
+    --size-4:1em;
+    --white: #F2EDEB;
+    --lilac: #BD93BD;
+    --violet: #925E78;
+    --green:#5d925d;
+    --red: 	#925d5d;
+}
+body{
+    background-color: var(--white);
+    color:var(--violet);
+    font-family: "SUSE", sans-serif;;
+
+}
+h1{
+    text-align: center;
+    padding: 40px 60px;
+    font-family: "Playpen Sans", cursive;
+}
+#add-form{
+    margin: 0 auto;
+    width: 60vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    gap: 6em;
+}
+#add-form img{
+    object-fit: cover;
+    width: 60%;
+    height: 100%;
+}
+#add-book{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.inputs-forms legend{
+    padding-bottom: 3px;
+    align-self: center;
+}
+.inputs-forms input{
+    height: 2em;
+    width: 15em;
+    outline-color: var(--violet);
+}
+
+input[type="checkbox"]{
+    accent-color: var(--violet);
+
+}
+
+input[type="text"], input[type="number"]{
+    background-color: var(--white);
+    border: 1px solid var(--lilac);
+}
+.legend{
+    text-align: center;
+}
+.inputs-forms, #check-read, #submit, .author, .pages, #read, #remove{
+    font-size: var(--size-1);
+}
+#check-read{
+    width: 100%;
+    display: flex;
+    gap: 0.3em;
+    justify-content: center;
+    align-items: center;
+}
+#submit{
+    padding: 10px 0;
+    width: 10.63em;
+    background-color: var(--violet);
+    color: var(--white);
+    border: 2px solid var(--lilac);
+}
+#books{
+    display: grid;
+    grid-template-columns: repeat(3,25%);
+    grid-template-rows: auto;
+    gap: 2em;
+    justify-content: center;
+    padding-bottom: 4em;
+}
+.title{
+    font-size: var(--size-2);
+}
+.div-book{
+    height: 20em;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+#text{
+    height: 10em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+#read, #remove{
+    width: 100%;
+    margin: 0.2em;
+    padding: 10px 20px;
+    font-family: "SUSE", sans-serif;
+}
+#read{
+    background-color: var(--green) ;
+    color:var(--white)
+}
+#remove{
+    background-color: var(--red);
+    color: var(--white);
+}
+.read-btn{
+    width: 100%;
+    margin: 0.2em;
+    padding: 10px 20px;
+}
+
+
+@media screen and (max-width:1024px) {
+    .div-book{
+        height:30em;
+        padding: 10px 30px;
+    }
+    #text{
+        height: 20em;
+        font-size: var(--size-4);
+        gap:0em;
+    }
+    .title{
+        font-size: var(--size-3);
+    }
+    #read, #remove{
+        font-size: var(--size-3);
+    }
+}
+@media screen and (max-width:768px) {
+    #books{
+        grid-template-columns: 80%;
+
+    }
+    #text{
+        justify-content: none;
+        gap: 0.3em;
+        height: 10em;
+    }
+    #read, #remove{
+        font-size: var(--size-4);
+    }
+   #add-form{
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 700px;
+        padding-bottom: 40px;
+    }
+    .div-book{
+        height: 20em;
+    }
+    
+}
+
