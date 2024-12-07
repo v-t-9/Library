@@ -3,7 +3,7 @@ const books = document.getElementById("books");
 const library = [
     new Book("The Hobbit", "J.R.R. Tolkien", 295, "Not read yet"), 
     new Book("Dracula", "Bram Stoker", 419, "Read"), 
-    new Book("The Hound of the Baskerville", "Sir Arthur Conan Doyle", 243, "Read"),
+    new Book("The Hound of the Baskervilles", "Sir Arthur Conan Doyle", 243, "Read"),
     new Book("The Phantom of the Opera", "Gastón Leroux", 368, "Not read yet")
 
 ];
