@@ -1,4 +1,5 @@
 const submitBtn = document.getElementById("submit");
+const clearBtn = document.getElementById("Clear");
 const books = document.getElementById("books");
 const library = [
     new Book("The Hobbit", "J.R.R. Tolkien", 295, "Not read yet"), 

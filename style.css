@@ -68,7 +68,7 @@ input[type="text"], input[type="number"]{
 .legend{
     text-align: center;
 }
-.inputs-forms, #check-read, #submit, .author, .pages, #read, #remove{
+.inputs-forms, #check-read, #submit, .author, .pages, #read, #remove, #clear{
     font-size: var(--size-1);
 }
 #check-read{
@@ -79,11 +79,13 @@ input[type="text"], input[type="number"]{
     align-items: center;
 }
 #submit{
-    padding: 10px 0;
-    width: 10.63em;
     background-color: var(--violet);
     color: var(--white);
     border: 2px solid var(--lilac);
+}
+#submit, #clear{
+    padding: 10px 0;
+    width: 10.63em;
 }
 #books{
     display: grid;
@@ -120,7 +122,7 @@ input[type="text"], input[type="number"]{
     padding: 10px 20px;
     font-family: "SUSE", sans-serif;
 }
-#read{
+#read, #clear{
     background-color: var(--green) ;
     color:var(--white)
 }
